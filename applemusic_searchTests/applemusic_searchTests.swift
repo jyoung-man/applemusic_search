@@ -1,4 +1,3 @@
-
 //
 //  applemusic_searchTests.swift
 //  applemusic_searchTests
@@ -320,6 +319,13 @@ final class MockURLProtocol: URLProtocol {
 
 @Suite("search() 통합 테스트 (Mock 네트워크)")
 struct SearchIntegrationTests {
+
+    // 각 테스트 시작 전 Mock 상태를 항상 초기화 → 테스트 간 오염 방지
+    init() {
+        MockURLProtocol.stubResponseData = nil
+        MockURLProtocol.stubError = nil
+        MockURLProtocol.requestHandler = nil
+    }
 
     private func makeViewModel() -> SearchViewModel {
         let config = URLSessionConfiguration.ephemeral

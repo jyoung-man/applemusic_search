@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "EEFDF2EC-6D59-40BE-9059-DBBB36C76A2C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:applemusic_search.xcodeproj",
+      "identifier" : "335CB12C2EE390BE002C19C8",
+      "name" : "applemusic_search"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:applemusic_search.xcodeproj",
+        "identifier" : "335CB13C2EE390BE002C19C8",
+        "name" : "applemusic_searchTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:applemusic_search.xcodeproj",
+        "identifier" : "335CB1462EE390BE002C19C8",
+        "name" : "applemusic_searchUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

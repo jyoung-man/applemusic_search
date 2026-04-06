@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		33D9C4AE2EE88C3D00DA2E6A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 33D9C4AD2EE88C3D00DA2E6A /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		335CB13E2EE390BE002C19C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D9C4AE2EE88C3D00DA2E6A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				335CB12F2EE390BE002C19C8 /* applemusic_search */,
 				335CB1402EE390BE002C19C8 /* applemusic_searchTests */,
 				335CB14A2EE390BE002C19C8 /* applemusic_searchUITests */,
+				33D9C4AC2EE88C3D00DA2E6A /* Frameworks */,
 				335CB12E2EE390BE002C19C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				335CB1472EE390BE002C19C8 /* applemusic_searchUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		33D9C4AC2EE88C3D00DA2E6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = applemusic_search;
 			packageProductDependencies = (
+				33D9C4AD2EE88C3D00DA2E6A /* Kingfisher */,
 			);
 			productName = applemusic_search;
 			productReference = 335CB12D2EE390BE002C19C8 /* applemusic_search.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 335CB1242EE390BD002C19C8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				33D9C4AB2EE88ADD00DA2E6A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 335CB12E2EE390BE002C19C8 /* Products */;
 			projectDirPath = "";
@@ -396,7 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"applemusic_search/Preview Content\"";
-				DEVELOPMENT_TEAM = U7238N8JWM;
+				DEVELOPMENT_TEAM = 96GRG35Q34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -409,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.applemusic-search";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jpark.applemusic-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -425,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"applemusic_search/Preview Content\"";
-				DEVELOPMENT_TEAM = U7238N8JWM;
+				DEVELOPMENT_TEAM = 96GRG35Q34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,7 +455,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.applemusic-search";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jpark.applemusic-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33D9C4AB2EE88ADD00DA2E6A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33D9C4AD2EE88C3D00DA2E6A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33D9C4AB2EE88ADD00DA2E6A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 335CB1252EE390BD002C19C8 /* Project object */;
 }

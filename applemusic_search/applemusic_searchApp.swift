@@ -11,7 +11,7 @@ import SwiftUI
 struct applemusic_searchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppleMusicRootView()
         }
     }
 }
